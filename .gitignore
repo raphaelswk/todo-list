@@ -2,6 +2,14 @@
 
 # dependencies
 /packages
-/*/bin
 
+/TodoListApp.Business/bin
+/TodoListApp.Data/bin
+/TodoListApp.Entities/bin
+/TodoListApp.Identity/bin
+/TodoListApp.IoC/bin
+/TodoListApp.Persistence/bin
+/TodoListApp.Web/bin
+
+# ide
 /.vs
