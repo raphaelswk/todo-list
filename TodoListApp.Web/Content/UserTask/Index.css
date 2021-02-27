@@ -1,0 +1,7 @@
+﻿#box-input, #box-table {
+    margin-top: 25px;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}

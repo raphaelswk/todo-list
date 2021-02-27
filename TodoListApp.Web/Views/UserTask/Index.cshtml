@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TodoListApp.Web.ViewModels.UserTaskViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/Content/UserTask/Index.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>TODO List</h2>
+    </div>
+    <div id="box-input" class="col-md-6">
+        <div class="input-group">
+            <input type="text" id="input-new-task" class="form-control" placeholder="Type your new task...">
+            <span class="input-group-btn">
+                <button id="btn-new-task" class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Add
+                </button>
+            </span>
+        </div>
+    </div>
+    <div id="box-table" class="col-md-12">
+        <table id="table-tasks" class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        Task Description
+                    </th>
+                    <th>
+                        Modified At
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/UserTask/Index.js"></script>
+}
